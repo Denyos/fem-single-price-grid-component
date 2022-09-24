@@ -18,6 +18,8 @@
 
   --fs-400: 1rem;
   --fs-500: 1.25rem;
+  --fs-600: 1.5rem;
+  --fs-900: 2.25rem;
 
   --fs-body: var(--fs-400);
   --fs-button: var(--fs-500);
@@ -90,6 +92,17 @@ svg {
   }
 }
 
+/* Screen reader */
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
 
 /* general styling */
 
@@ -109,18 +122,30 @@ main {
 
 article {
   border-radius: 0.5rem;
+  box-shadow: 0rem 0.5rem 1.5rem 0rem hsl(0, 0%, 0%, 0.15);
+  overflow: hidden;
 }
 
 section {
   padding: 2rem;
-
 }
 
 .plan {
-  max-width: 63.5rem;
+  max-width: 40rem;
 }
 
-@media all and (min-width: 48em) {
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.subscription p {
+  padding-bottom: 1rem;
+}
+
+
+@media all and (min-width: 40rem) {
   .subscription {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -141,6 +166,7 @@ section {
   color: var(--clr-neutral-100);
   background-color: var(--clr-primary-200);
   width: 100%;
+  box-shadow: 1px 16px 17px -4px hsl(0, 0%, 0%, 0.15);
 }
 
 /* Utility classes */
@@ -202,4 +228,29 @@ section {
 
 .fw-regular {
   font-weight: var(--fw-regular);
+}
+
+.fs-400 {
+  font-size: var(--fs-body);
+}
+
+.fs-500 {
+  font-size: var(--fs-500);
+}
+
+.fs-600 {
+  font-size: var(--fs-600);
+}
+
+.fs-900 {
+  font-size: var(--fs-900);
+}
+
+/* not sure about this */
+.heading {
+  margin-bottom: 1em;
+}
+
+.sub-heading {
+  margin-bottom: 0.5em;
 }
