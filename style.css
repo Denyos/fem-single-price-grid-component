@@ -144,6 +144,13 @@ section {
   padding-bottom: 2rem;
 }
 
+.heading {
+  margin-bottom: 1em;
+}
+
+.sub-heading {
+  margin-bottom: 0.5em;
+}
 
 @media all and (min-width: 40rem) {
   .subscription {
@@ -151,7 +158,6 @@ section {
     grid-template-columns: 1fr 1fr;
   }
 }
-
 
 /* button */
 
@@ -178,10 +184,6 @@ section {
   color: var(--clr-primary-300);
 }
 
-.text-primary-400 {
-  color: var(--clr-primary-400);
-}
-
 .text-neutral-100 {
   color: var(--clr-neutral-100);
 }
@@ -194,14 +196,6 @@ section {
   color: var(--clr-neutral-900);
 }
 
-.text-primary-200 {
-  color: var(--clr-primary-200);
-}
-
-.background-primary-200 {
-  background-color: var(--clr-primary-200);
-}
-
 .background-primary-300 {
   background-color: var(--clr-primary-300);
 }
@@ -212,14 +206,6 @@ section {
 
 .background-neutral-100 {
   background-color: var(--clr-neutral-100);
-}
-
-.background-neutral-200 {
-  background-color: var(--clr-neutral-200);
-}
-
-.background-neutral-900 {
-  background-color: var(--clr-neutral-900);
 }
 
 .fw-bold {
@@ -246,11 +232,3 @@ section {
   font-size: var(--fs-900);
 }
 
-/* not sure about this */
-.heading {
-  margin-bottom: 1em;
-}
-
-.sub-heading {
-  margin-bottom: 0.5em;
-}
